@@ -9,7 +9,7 @@ const meteoriteIcon = new Icon({
 
 export const Map = ({ data }) => {
   return (
-    <div className="map" style={{ background: "black" }}>
+    <div>
       <MapContainer
         center={[51.511493, -0.104432]}
         zoom={10}
