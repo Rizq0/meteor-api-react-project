@@ -9,15 +9,19 @@ const meteoriteIcon = new Icon({
 
 export const Map = ({ data }) => {
   return (
-    <div>
+    <div className="map" style={{ background: "black" }}>
       <MapContainer
-        center={[51.505, -0.09]}
+        center={[51.511493, -0.104432]}
         zoom={10}
         style={{ height: "100vh", width: "100%" }}
+        worldCopyJump={true}
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attribution">CARTO</a>'
+          maxZoom="20"
+          minZoom="3"
+          noWrap={true}
         />
         {data.map((meteorite) => {
           if (meteorite.geolocation) {
@@ -31,7 +35,8 @@ export const Map = ({ data }) => {
                 icon={meteoriteIcon}
               >
                 <Popup>
-                  {meteorite.name} <br /> {meteorite.year}
+                  {meteorite.name} <br /> {meteorite.year} <br />
+                  {meteorite.mass}g
                 </Popup>
               </Marker>
             );
