@@ -6,3 +6,17 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.toolbarcontainer {
+  color: white;
+  display: flex;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  z-index: 1000;
+}
+
+.toolbarbutton {
+  background-color: white;
+  color: black;
+}

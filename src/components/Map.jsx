@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
+import { Toolbar } from "./Toolbar";
 
 const meteoriteIcon = new Icon({
   iconUrl: "src/meteorite.png",
@@ -9,8 +10,10 @@ const meteoriteIcon = new Icon({
 
 export const Map = ({ data }) => {
   return (
-    <div>
+    <>
+      <Toolbar />
       <MapContainer
+        class="mapcontainer"
         center={[51.511493, -0.104432]}
         zoom={10}
         style={{ height: "100vh", width: "100%" }}
@@ -45,6 +48,6 @@ export const Map = ({ data }) => {
           }
         })}
       </MapContainer>
-    </div>
+    </>
   );
 };
