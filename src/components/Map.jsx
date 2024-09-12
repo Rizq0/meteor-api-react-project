@@ -4,7 +4,7 @@ import { Icon } from "leaflet";
 import { Toolbar } from "./Toolbar";
 
 const meteoriteIcon = new Icon({
-  iconUrl: "src/meteorite.png",
+  iconUrl: "src/icons/meteorite.png",
   iconSize: [25, 25],
 });
 
