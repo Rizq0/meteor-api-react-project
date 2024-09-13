@@ -7,29 +7,38 @@ body {
   margin: 0;
 }
 
-.toolbarcontainer {
+.toolbar {
   color: white;
-  display: flex;
   position: fixed;
+  display: flex;
   bottom: 2%;
   left: 2%;
   z-index: 1000;
 }
 
 .toolbarbutton {
-  background-color: white;
-  color: black;
-}
-
-.lightdark {
-  height: 5%;
-  width: 8%;
+  height: 3rem;
+  width: 3rem;
   /* border-radius: 50%; */
 }
 
-.lightdark:hover {
-  height: 5%;
-  width: 8%;
+.toolbarbutton:hover {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(100, 100, 100);
+  transition: 0.7s;
+  border-radius: 50%;
+}
+
+.toolbardarkmode {
+  height: 3rem;
+  width: 3rem;
+  /* border-radius: 50%; */
+}
+
+.toolbardarkmode:hover {
+  height: 3rem;
+  width: 3rem;
   background-color: rgb(100, 100, 100);
   transition: 0.7s;
   border-radius: 50%;
