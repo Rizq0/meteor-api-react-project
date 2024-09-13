@@ -24,12 +24,13 @@ body {
 .lightdark {
   height: 5%;
   width: 8%;
+  /* border-radius: 50%; */
 }
 
 .lightdark:hover {
   height: 5%;
   width: 8%;
-  background-color: rgb(99, 99, 99);
+  background-color: rgb(100, 100, 100);
   transition: 0.7s;
-  border-radius: 20px;
+  border-radius: 50%;
 }
