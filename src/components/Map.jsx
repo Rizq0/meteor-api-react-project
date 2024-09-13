@@ -2,6 +2,8 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
 import { Toolbar } from "./Toolbar";
+import { useContext } from "react";
+import { NightModeContext } from "../contexts/night-mode";
 
 const meteoriteIcon = new Icon({
   iconUrl: "src/icons/meteorite.png",
@@ -9,6 +11,7 @@ const meteoriteIcon = new Icon({
 });
 
 export const Map = ({ data }) => {
+  const { isLightMode } = useContext(NightModeContext);
   return (
     <>
       <Toolbar />
@@ -20,7 +23,9 @@ export const Map = ({ data }) => {
         worldCopyJump={true}
       >
         <TileLayer
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          url={`https://{s}.basemaps.cartocdn.com/${
+            isLightMode ? "light_all" : "dark_all"
+          }/{z}/{x}/{y}{r}.png`}
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attribution">CARTO</a>'
           maxZoom="20"
           minZoom="3"

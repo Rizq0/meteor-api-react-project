@@ -25,3 +25,11 @@ body {
   height: 5%;
   width: 8%;
 }
+
+.lightdark:hover {
+  height: 5%;
+  width: 8%;
+  background-color: rgb(99, 99, 99);
+  transition: 0.7s;
+  border-radius: 20px;
+}
