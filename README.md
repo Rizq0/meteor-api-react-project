@@ -7,7 +7,7 @@ This small scale project is a web-based tool designed to display an interactive 
 - Simple Interactive Map
 - Modified Icons
 - Meteorites Plotted By Latitude and Longitude
-- Day/Night Map Toggle
+- Light/Dark Map Toggle
 
 ## Planned Features
 
