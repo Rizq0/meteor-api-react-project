@@ -6,6 +6,8 @@
 <h3 align="center">This small scale project is a web-based tool designed to display an interactive map showing currently known meteorite landings from the NASA API.</h3>
 <div align="center">
 
+[Current Deployed Version (Click Me)](https://meteorite-map.netlify.app/)
+
 </div>
 <br/>
 <img src="src/assets/meteor-demo.gif" title="Main Demo">
