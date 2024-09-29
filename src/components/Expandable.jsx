@@ -1,4 +1,5 @@
 import { useState } from "react";
+import gearIcon from "../icons/settings-gear-icon.png";
 export const Expandable = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +12,7 @@ export const Expandable = ({ children }) => {
       <input
         type="image"
         onClick={toggleOpen}
-        src="src/icons/settings-gear-icon.png"
+        src={gearIcon}
         className="toolbarbutton"
       />
       {isOpen && children}

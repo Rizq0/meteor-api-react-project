@@ -4,9 +4,10 @@ import { Icon } from "leaflet";
 import { Toolbar } from "./Toolbar";
 import { useContext } from "react";
 import { NightModeContext } from "../contexts/night-mode";
+import meteorIcon from "../icons/meteorite.png";
 
 const meteoriteIcon = new Icon({
-  iconUrl: "src/icons/meteorite.png",
+  iconUrl: meteorIcon,
   iconSize: [25, 25],
 });
 
