@@ -1,4 +1,4 @@
-# Meteorite Solo Project
+# Meteorite Map
 
 This small scale project is a web-based tool designed to display an interactive map showing currently known meteorite landings from the NASA API.
 
