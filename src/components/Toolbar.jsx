@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { NightModeContext } from "../contexts/night-mode";
+import { Expandable } from "./Expandable";
 
 export const Toolbar = () => {
   const { isLightMode, setLightMode } = useContext(NightModeContext);
@@ -8,13 +9,13 @@ export const Toolbar = () => {
   };
 
   return (
-    <div className="toolbarcontainer">
+    <Expandable>
       <input
         type="image"
         src="src/icons/brightness-and-contrast.png"
-        className="lightdark"
+        className="toolbardarkmode"
         onClick={activateTheme}
       ></input>
-    </div>
+    </Expandable>
   );
 };
