@@ -1,6 +1,16 @@
 # Meteorite Solo Project
 
-This small scale project is a web-based tool designed to display an interactive map showing currently known meteorite landings from the NASA API.
+<p align="center">
+<img src="src/assets/meteor-logo.png" width="200" title="Login With Custom URL">
+</p>
+<h3 align="center">This small scale project is a web-based tool designed to display an interactive map showing currently known meteorite landings from the NASA API.</h3>
+<div align="center">
+
+</div>
+<br/>
+<img src="src/assets/meteor-demo.gif" title="Main Demo">
+</a>
+<br/>
 
 ## Current Features
 
